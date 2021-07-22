@@ -29,6 +29,7 @@ public class MyFilter implements Filter {
         }
     }
 
+
     private boolean process(HttpServletRequest request, HttpServletResponse response) throws Exception {
         if (request.getRequestURI().startsWith("/css") || request.getRequestURI().startsWith("/images") || request.getRequestURI().startsWith("/favicon"))
             return false;
